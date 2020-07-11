@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="DevForum" />
+		<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+		<title>DevForum</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				font-family: 'Montserrat', sans-serif;
+				-webkit-user-select: none;
+				user-select: none;
+				-webkit-user-drag: none;
+				outline: none;
+			}
+			body {
+				margin: 0;
+				background-color: rgb(240, 240, 240);
+			}
+			nav {
+				display: flex;
+				background-color: rgb(240, 240, 240);
+				justify-content: space-between;
+				box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+				position: sticky;
+				top: 0;
+				left: 0;
+				right: 0;
+			}
+			nav a,
+			nav span {
+				border: none;
+				outline: none;
+				color: white;
+				background-color: rgb(38, 38, 255);
+				display: inline-block;
+				text-decoration: none;
+				text-align: center;
+				padding: 10px;
+				cursor: pointer;
+				margin: ;
+			}
+			nav a:hover,
+			nav span:hover {
+				background-color: rgb(73, 73, 255);
+			}
+			main {
+				padding-top: 40px;
+				max-width: 600px;
+				margin: auto;
+				padding: 20px;
+				display: grid;
+				row-gap: 10px;
+			}
+			main button {
+				outline: none;
+				background-color: rgb(73, 73, 255);
+				color: white;
+				display: inline-block;
+				text-decoration: none;
+				border: none;
+				text-align: center;
+				padding: 10px;
+				cursor: pointer;
+			}
+			input {
+				padding: 10px;
+			}
+			textarea {
+				padding: 10px;
+				max-width: 580px;
+				min-width: 200px;
+			}
+			.userinfo{
+				background-color: #ccc;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<div id="root"></div>
+	</body>
+</html>
