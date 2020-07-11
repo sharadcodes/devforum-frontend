@@ -19,7 +19,9 @@ export const createQuestion = (content, category) => {
 };
 
 // get single question
-export const getQuestion = (questionId) => {};
+export const getQuestion = (questionId) => {
+	return fetch(`${API}/question/${questionId}`).then((r) => r.json());
+};
 
 // get all questions
 export const getAllQuestions = () => {

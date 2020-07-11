@@ -7,6 +7,7 @@ import SignIn from "./pages/SignIn";
 import Forum from "./pages/Forum";
 import AdminDash from "./pages/AdminDash";
 import UserDash from './pages/UserDash';
+import FullQuestion from './pages/FullQuestion';
 
 const Routes = () => {
 	return (
@@ -15,6 +16,7 @@ const Routes = () => {
 				<Route path="/" exact component={Forum} />
 				<Route path="/signin" exact component={SignIn} />
 				<Route path="/signup" exact component={SignUp} />
+				<Route path="/question/:qid" exact component={FullQuestion} />
 				<PrivateRoute path="/userdashboard" exact component={UserDash} />
 				<AdminRoute path="/admindashboard" exact component={AdminDash} />
 			</Switch>

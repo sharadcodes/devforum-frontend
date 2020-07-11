@@ -1,0 +1,17 @@
+###
+PUT https://devforum-sharad.herokuapp.com/api/question/5f09be8b0ff93900171ca95a/answers/5f09bd0f0ff93900171ca957
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjA5YmQwZjBmZjkzOTAwMTcxY2E5NTciLCJpYXQiOjE1OTQ0ODkzNzJ9.7_d6GFaGntzVYikXxDGeXX7SfKmN1RDnE4HtE-TZPxo
+
+{
+    "content": "lorem"
+}
+
+###
+POST https://devforum-sharad.herokuapp.com/api/signin
+Content-Type: application/json
+
+{
+    "email": "s@s.com",
+    "password": "sss"
+}
