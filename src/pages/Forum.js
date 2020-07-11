@@ -48,7 +48,7 @@ const Forum = () => {
 									</div>
 								</div>
 							</div>
-							<pre>{q.content}</pre>
+							<pre className="qcard-ques">{q.content}</pre>
 						</div>
 					);
 				})}
