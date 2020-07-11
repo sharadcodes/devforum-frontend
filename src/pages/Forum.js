@@ -3,18 +3,27 @@ import Base from "../Base";
 import Question from "./Question";
 import { isAuthenticated } from "../helpers/auth/auth_api_calls";
 import { getAllQuestions } from "../helpers/common/forum_api_calls";
-import moment from "moment";
 // moment
+import moment from "moment";
+// loader
+import Loader from "react-loader-spinner";
 
 const Forum = () => {
 	const [questions, setQuestions] = useState([]);
 	const [msg, setMsg] = useState("");
+	const [loading, setLoading] = useState(true);
 
 	function getQuestions() {
+		setLoading(true);
 		getAllQuestions()
 			.then((data) => {
-				if (data.error) setMsg(JSON.parse(data.error));
-				else setQuestions(data);
+				if (data.error) {
+					setMsg(JSON.parse(data.error));
+					setLoading(false);
+				} else {
+					setQuestions(data);
+					setLoading(false);
+				}
 			})
 			.catch((err) => setMsg(JSON.parse(err)));
 	}
@@ -31,6 +40,17 @@ const Forum = () => {
 				{msg}
 			</div>
 			<h3>Questions</h3>
+			{loading && (
+				<div style={{ textAlign: "center", marginTop: "10vh" }}>
+					<Loader
+						type="Bars"
+						color="#001133"
+						height={50}
+						width={50}
+						timeout={3000} //3 secs
+					/>
+				</div>
+			)}
 			<div>
 				{questions.map((q, i) => {
 					return (
@@ -42,9 +62,13 @@ const Forum = () => {
 									<div className="qcard-meta-inner">
 										<div>
 											<span className="qcat">#{q.category.name}</span>
-											<span className="qdate">{moment(q.createdAt).format("MMMM Do YYYY h:mm:ss a")}</span>
+											<span className="qdate">
+												{moment(q.createdAt).format("MMMM Do YYYY h:mm:ss a")}
+											</span>
 										</div>
-										<span className="qdate">{moment(q.createdAt).isSame(q.updatedAt)? "": "edited"}</span>
+										<span className="qdate">
+											{moment(q.createdAt).isSame(q.updatedAt) ? "" : "edited"}
+										</span>
 									</div>
 								</div>
 							</div>
