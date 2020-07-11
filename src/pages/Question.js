@@ -46,6 +46,8 @@ const Question = ({ history }) => {
 		>
 			{categories.length > 0 && (
 				<React.Fragment>
+					<br />
+					<label>SELECT CATEGORY</label>
 					<select value={category} onChange={handleCategoryChange}>
 						{categories.map((c, i) => {
 							return (

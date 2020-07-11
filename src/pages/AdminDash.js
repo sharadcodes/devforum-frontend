@@ -45,8 +45,9 @@ const AdminDash = () => {
 
 	const myCategoryForm = () => (
 		<form style={{ display: "grid", gridRowGap: "10px" }}>
-			<label>ENTER CATEGORY NAME</label>
+			<h2>ADMIN DASHBOARD</h2>
 			<br />
+			<label>CREATE CATEGORY</label>
 			<input
 				type="text"
 				onChange={handleChange}

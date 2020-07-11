@@ -8,13 +8,16 @@
 		<meta name="description" content="DevForum" />
 		<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap"
+			rel="stylesheet"
+		/>
 		<title>DevForum</title>
 		<style>
 			* {
 				padding: 0;
 				margin: 0;
-				font-family: 'Montserrat', sans-serif;
+				font-family: "Montserrat", sans-serif;
 				-webkit-user-select: none;
 				user-select: none;
 				-webkit-user-drag: none;
@@ -52,10 +55,9 @@
 				background-color: rgb(73, 73, 255);
 			}
 			main {
-				padding-top: 40px;
+				padding: 40px 20px 20px 20px;
 				max-width: 600px;
 				margin: auto;
-				padding: 20px;
 				display: grid;
 				row-gap: 10px;
 			}
@@ -78,9 +80,59 @@
 				max-width: 580px;
 				min-width: 200px;
 			}
-			.userinfo{
+			.userinfo {
 				background-color: #ccc;
 				padding: 5px;
+			}
+			/* q card */
+			.qcard {
+				box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+				padding: 20px;
+				margin-bottom: 20px;
+				border-radius: 10px;
+			}
+			.quimg {
+				width: 50px;
+				height: 50px;
+				background: rgb(230, 154, 33);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 100%;
+				font-size: 30px;
+			}
+			.qcat {
+				background: #ccc;
+				color: #323232;
+				padding: 2px;
+				font-size: 10px;
+			}
+			.qdate {
+				font-size: 10px;
+				margin-left: 10px;
+			}
+			.qcard-meta-wrapper {
+				display: flex;
+				justify-content: left;
+				align-items: center;
+				margin-bottom: 20px;
+			}
+			.qcard-meta {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: left;
+				margin-left: 10px;
+				flex: 1;
+			}
+			.qcard-meta-inner {
+				display: flex;
+				justify-content: space-between;
+				align-items: baseline;
+				margin-top: 5px;
+			}
+			.qcard-ques {
+				color: #323232;
 			}
 		</style>
 	</head>
