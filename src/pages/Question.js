@@ -81,7 +81,7 @@ const Question = ({ history }) => {
 					></textarea>
 					<button onClick={handleSubmit}>ASK</button>
 					{loading && (
-						<div style={{ textAlign: "center", marginTop: "10vh" }}>
+						<div style={{ textAlign: "center", marginTop: "10px" }}>
 							<Loader
 								type="Oval"
 								color="#001133"
@@ -91,7 +91,7 @@ const Question = ({ history }) => {
 							/>
 						</div>
 					)}
-					<div>{msg}</div>
+					<h6 style={{marginBottom: "10px"}}>{msg}</h6>
 				</React.Fragment>
 			)}
 		</div>
