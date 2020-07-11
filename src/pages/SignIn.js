@@ -6,8 +6,8 @@ import { useHistory } from "react-router-dom";
 const SignIn = () => {
 	const history = useHistory();
 
-	const [email, setEmail] = useState("s@s.com");
-	const [password, setPassword] = useState("sss");
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
 	const [msg, setMsg] = useState("");
 
 	const handleSubmit = () => {
