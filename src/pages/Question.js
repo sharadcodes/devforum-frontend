@@ -83,7 +83,7 @@ const Question = ({ history }) => {
 					{loading && (
 						<div style={{ textAlign: "center", marginTop: "10px" }}>
 							<Loader
-								type="Oval"
+								type="Bars"
 								color="#001133"
 								height={50}
 								width={50}
