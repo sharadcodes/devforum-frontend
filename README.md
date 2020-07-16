@@ -12,6 +12,3 @@
 
 - [ReactJS](https://reactjs.org/) - A JavaScript library for building user interfaces. 
 - [NodeJS](https://nodejs.org/en/)- Executes JavaScript code outside of a browser.
-
-### Database
-- [MongoDB](https://www.mongodb.com/) - The database for modern applications.
